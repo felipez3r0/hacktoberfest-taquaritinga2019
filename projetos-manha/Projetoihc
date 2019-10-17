@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Pagina inicial</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript"></script>
+  <script>
+    $(document).ready(function(){
+    
+        $("#myCarousel").carousel();
+        
+       
+        $(".carousel-control-prev").click(function(){
+            $("#myCarousel").carousel('prev');
+        });
+        $(".carousel-control-next").click(function(){
+            $("#myCarousel").carousel('next');
+        });
+        
+       
+        $(".slide-one").click(function(){
+            $("#myCarousel").carousel(0);
+        });
+        $(".slide-two").click(function(){
+            $("#myCarousel").carousel(1);
+        });
+        $(".slide-three").click(function(){
+            $("#myCarousel").carousel(2);
+        });
+    });
+    </script>
+  <style>
+.carousel{
+    background: #2f4357;
+    margin-top: 0px ;
+    max-width: 1400px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 500px; 
+   
+}
+.bs-example{
+	margin: 0px 0px  0px 0px;
+}
+.carousel-indicators li, .carousel a{
+    cursor: pointer;
+}
+
+    .holder {
+      display: flex;
+      justify-content: flex;
+    }
+
+    .imagem {
+      width: 500px;
+      margin:  -7px 100px 0px -7px;
+      position: relative;
+      text-align: center;
+    }
+    .espaçamento{
+      margin: -35px 10px 30px 150px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <span class="d-block p-2 bg-dark text-white">
+
+    <div class="d-flex flex-row-reverse bd-highlight">
+
+      <table>
+        <td>
+          <div class="mx-auto" style="width: 850px;"> CRECI 5010-k</div>
+        </td>
+        <td><img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\zap.jpg" alt="some text"
+            class="rounded mx-auto d-block" width=25 height=25 /></td>
+        <td> <label type="text" id="numero"> (16) 99999 - 9999</label> </td>
+        <td><img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\fone.png" alt="some text"
+            class="rounded mx-auto d-block" width=25 height=25 /></td>
+        <td> <label type="text"> (16) 99999 - 9999 / (16) 3244 - 0000</label></td>
+      </table>
+      <div class="p-2 bd-highlight"></div>
+    </div>
+
+  </span>
+  <span class="d-block p-2 bg-primary text-white">
+    <div class="imagem" >
+      <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\imobiliaria.jpg" class="rounded float-left"
+        alt="some text "  width=180 height=148>
+    </br></br></br>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href=""><h4>Pagina Inicial</h4> <span class="sr-only">(página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aluguel.html"><h4>Aluguel</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Vendas.html"><h4>Vendas</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Cadastro.html"><h4>Cadastrar imóvel</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Trabalhe.html"><h4>Trabalhe Conosco</h4></a>
+          </li>
+
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-light" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+  </span>
+
+
+  <div class="bs-example" >
+    <div id="myCarousel" class="carousel slide"  data-interval="3000" data-ride="carousel">
+     
+        <ol class="carousel-indicators">
+            <li  class="slide-one active"></li>
+            <li class="slide-two"></li>
+            <li class="slide-three"></li>
+            <li class="slide-three"></li>
+            <li class="slide-three"></li>
+        </ol>
+       
+        <div class="carousel-inner" >
+            <div class="carousel-item active" >
+                <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\fotos\07.jpg" width="1400px" height="500px"  alt="First Slide">
+                <div  class="carousel-caption d-none d-md-block">
+                    <h3 >Nossos Principais Imoveis</h3>
+                    <p>Jardim Paraiso  Monte Alto - SP </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\fotos\11.jpg"  width="1400px" height="500px"  alt="Second Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\fotos\08.jpg"  width="1400px" height="500px"  alt="Third Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\fotos\09.jpg"  width="1400px" height="500px"  alt="Third Slide">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\fotos\10.jpg"  width="1400px" height="500px"  alt="Third Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+        </div>
+      
+        <a class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+</br>     
+
+<div class="container-fluid">
+Um pouco sobre nós</br>
+<h4><a class="text-primary">Imobiliária</a> DNR</h4></br>
+
+A Imobiliária São Paulo foi fundada em 1993 com o intuito de oferecer serviços diferenciados no atendimento aos clientes do ramo imobiliário. Pautando sempre seu trabalho na honestidade, gerou a confiança hoje depositada por seus inúmeros clientes, o que a coloca como uma das melhores imobiliárias de Araraquara e região.
+
+Atuando em todos os segmentos deste mercado, logo se tornou referência devido à sua agilidade e capacidade em gerar negócios e satisfação a seus clientes. Com um departamento juridíco próprio e um grupo de funcionários sempre treinados e atualizados, a empresa consolidou sua posição no mercado Araraquarense, ao instalar-se em uma sede própria no coração da cidade, em um prédio amplo, totalmente restaurado, em que se preservou seus traços arquitetônicos do início do século.
+
+Para atender cada vez melhor, busca soluções modernas e praticas, adaptando-se à realidade dos novos tempos, através da informação, mantendo atendimento personalizado a cada cliente.
+
+Hoje, além de poder comprar, vender ou alugar um imóvel com segurança, os clientes da Imobiliária São Paulo, contam ainda com uma ampla assessoria na àrea de investimentos, frutos da competência de quem realmente está conectada com as tendências do mercado.
+
+
+</div>
+
+
+</br>
+
+
+
+
+
+
+
+
+  <span class="d-block p-2 bg-primary text-white" class="espaçamento">
+    <p>
+      <h5 style="margin: 0 0 0 40px "> Endereço da Imobiliaria</h5>
+    </p>
+
+    <div id="map-container-google-1" class="z-depth-1-half map-container" style=" width: 100px height: 160px">
+      <div class="holder">
+        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          style="border:0" allowfullscreen>
+        </iframe>
+      
+        <div class="espaçamento">
+          <h5>Nossas redes sociais</h5>
+          <table>
+            <tr>
+              <td> <a href="#"> <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\face.png" alt="some text" width=30
+                height=30></a></td>
+               <td> <label type="text" id="numero">https://pt-br.facebook.com/</label> </td>
+            </tr>
+            <tr>
+              <td><a href="#"> <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\twiitter.jpg" alt="some text" width=30
+                height=30></a></td>
+
+              <td> <label type="text"> https://twitter.com/</label></td>
+            </tr>
+            <tr>
+              <td> <a href="#"> <img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\instagram.jpg" alt="some text" width=30
+                height=30></a></td>
+              <td>
+                <labela type="text"> https://www.instagram.com/</label>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="espaçamento">
+          <h5>Entre em contato</h5>
+          <table>
+            <tr>
+              <td><img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\zap.jpg" alt="some text"
+                  class="rounded mx-auto d-block" width=30 height=30 /></td>
+
+              <td> <label type="text" id="numero"> (16) 99999 - 9999</label> </td>
+            </tr>
+            <tr>
+              <td><img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\fone.png" alt="some text"
+                  class="rounded mx-auto d-block" width=30 height=28 /></td>
+
+              <td> <label type="text"> (16) 99999 - 9999 / (16) 3244 - 0000</label></td>
+            </tr>
+            <tr>
+              <td><a href="#"><img src="C:\Users\nholl\Desktop\Materias ADS\IHC\Projeto\gmail.png" alt="some text"
+                    class="rounded mx-auto d-block" width=30 height=20 /></a></td>
+              <td>
+                <labela type="text"> imobiliaria@dnr.com.br</label>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+</body>
+
+</html>
