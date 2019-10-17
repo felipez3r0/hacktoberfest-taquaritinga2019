@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+</head>
+
+<body>
+
+    <input type="checkbox" name="" id="bt-menu">
+    <label for="bt-menu">&#9776;</label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a>
+                <ul>
+                    <li><a href="#">Criação de Sites</a></li>
+                    <li><a href="#">Arte Visual</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Cursos</a>
+                <ul>
+                    <li><a href="#">SI</a></li>
+                    <li><a href="#">PI</a></li>
+                    <li><a href="#">ADS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu ul ul li a {
+    background-color: #069;
+}
+
+label[for="bt-menu"] {
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#bt-menu {
+    display: none;
+}
+
+label[for="bt-menu"] {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    label[for="bt-menu"] {
+        display: block;
+    }
+    #bt-menu:checked~.menu {
+        margin-left: 0;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+}
+</style>
+
+</html>
